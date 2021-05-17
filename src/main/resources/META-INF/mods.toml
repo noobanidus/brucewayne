@@ -1,0 +1,26 @@
+modLoader="javafml" #mandatory
+loaderVersion="[35,)" #mandatory (26 is current forge version)
+issueTrackerURL="https://github.com/noobanidus/grindr/issues" #optional
+license="https://github.com/noobanidus/brucewayne/blob/1.16/LICENSE"
+[[mods]]
+modId="brucewayne" #mandatory
+version="${file.jarVersion}" #mandatory
+displayName="BruceWayne" #mandatory
+displayURL="https://www.curseforge.com/minecraft/mc-mods/the-bruce-wayne-mod" #optional
+authors="Noobanidus"
+description='''
+Not the younglings!
+'''
+[[dependencies.BruceWayne]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[35,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+# Here's another dependency
+[[dependencies.BruceWayne]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.4,)"
+    ordering="NONE"
+    side="BOTH"
